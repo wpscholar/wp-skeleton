@@ -1,9 +1,9 @@
 <?php
 
-require( dirname( __DIR__ ) . '/wp-config-local.php' );
+require( __DIR__ . '/vendor/autoload.php' );
 
-if( ! defined('APP_DOMAIN') ) {
-	define('APP_DOMAIN', $_SERVER['HTTP_HOST']);
+if ( ! defined( 'APP_DOMAIN' ) ) {
+	define( 'APP_DOMAIN', $_SERVER['HTTP_HOST'] );
 }
 
 define( 'WP_HOME', 'http://' . APP_DOMAIN );

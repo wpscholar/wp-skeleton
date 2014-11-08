@@ -11,6 +11,9 @@
 /wp/
 /salt.php
 
+# WordPress: Config File
+/wp-config-*.php
+
 # WordPress: Must-Use Plugins
 /content/mu-plugins/*
 !/content/mu-plugins/index.php
