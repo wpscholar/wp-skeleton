@@ -1,0 +1,44 @@
+{
+    "name": "wpscholar/wordpress-skeleton",
+    "description": "Setup a new WordPress installation via Composer.",
+    "license": "GPL-2.0+",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Micah Wood",
+            "email": "micah@wpscholar.com",
+            "homepage": "http://wpscholar.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        { 
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "~4.0",
+        "composer/installers": "~1.0",
+        "wpackagist-plugin/revisr": "~1.8"
+    },
+    "suggest": {
+        "wp-cli/wp-cli": "~0.17"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/plugins/{$name}": ["type:wordpress-plugin"],
+            "content/themes/{$name}": ["type:wordpress-theme"],
+            "content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+        }
+    },
+    "scripts": {
+        "generate-salts": [
+            "echo '<?php' > salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> salt.php"
+        ],
+        "post-create-project-cmd": [
+            "composer run generate-salts"
+        ]
+    }
+}

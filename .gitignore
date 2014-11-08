@@ -1,0 +1,29 @@
+# Mac
+.DS_Store
+
+# PHPStorm
+.idea
+
+# Composer
+/vendor/
+
+# WordPress
+/wp/
+/salt.php
+
+# WordPress: Must-Use Plugins
+/content/mu-plugins/*
+!/content/mu-plugins/index.php
+!/content/mu-plugins/register-theme-directory.php
+
+# WordPress: Plugins
+/content/plugins/*
+!/content/plugins/index.php
+
+# WordPress: Themes
+/content/themes/*
+!/content/themes/index.php
+
+# WordPress: Uploads
+/content/uploads/*
+!/content/uploads/index.php
