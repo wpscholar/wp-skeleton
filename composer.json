@@ -1,5 +1,5 @@
 {
-    "name": "wpscholar/wordpress-skeleton",
+    "name": "wpscholar/wp-skeleton",
     "description": "Setup a new WordPress installation via Composer.",
     "license": "GPL-2.0+",
     "type": "project",
