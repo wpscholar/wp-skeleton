@@ -19,8 +19,7 @@
     ],
     "require": {
         "johnpbloch/wordpress": "~4.0",
-        "composer/installers": "~1.0",
-        "wpackagist-plugin/revisr": "~1.8"
+        "composer/installers": "~1.0"
     },
     "suggest": {
         "wp-cli/wp-cli": "~0.17"

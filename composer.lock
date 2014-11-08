@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4b79137509f86066f65b14a042d9f0be",
+    "hash": "2ff1db3c623a5adc32e71567ff27b899",
     "packages": [
         {
             "name": "composer/installers",
@@ -177,29 +177,6 @@
             ],
             "description": "A custom installer to handle deploying WordPress with composer",
             "time": "2013-09-09 15:04:54"
-        },
-        {
-            "name": "wpackagist-plugin/revisr",
-            "version": "1.8",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/revisr/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/revisr.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/revisr": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/revisr/"
         }
     ],
     "packages-dev": [],
