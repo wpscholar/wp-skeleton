@@ -23,11 +23,11 @@
 		}
 	],
 	"require": {
-		"johnpbloch/wordpress": "~4.0",
-		"composer/installers": "~1.0"
+		"johnpbloch/wordpress": "*@stable",
+		"composer/installers": "*@stable"
 	},
 	"suggest": {
-		"wp-cli/wp-cli": "~0.17"
+		"wp-cli/wp-cli": "*@stable"
 	},
 	"extra": {
 		"wordpress-install-dir": "wp",
