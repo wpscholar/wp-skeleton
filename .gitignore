@@ -30,3 +30,6 @@
 # WordPress: Uploads
 /content/uploads/*
 !/content/uploads/index.php
+
+# dotEnv Configuration:
+.env
