@@ -24,7 +24,8 @@
 	],
 	"require": {
 		"johnpbloch/wordpress": "*@stable",
-		"composer/installers": "*@stable"
+		"composer/installers": "*@stable",
+		"vlucas/phpdotenv": "~1.1"
 	},
 	"suggest": {
 		"wp-cli/wp-cli": "*@stable"
