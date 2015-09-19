@@ -32,5 +32,5 @@
 /content/uploads/*
 !/content/uploads/index.php
 
-# dotEnv Configuration:
+# dotEnv Configuration
 .env
