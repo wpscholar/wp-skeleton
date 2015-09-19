@@ -11,5 +11,5 @@ PHP 5.3.2+
 ```bash
 $ composer create-project wpscholar/wp-skeleton {directory}
 $ cd {directory}
-$ mv sample-wp-config-local.php wp-config-local.php
+$ mv .env.example .env
 ```

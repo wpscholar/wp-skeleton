@@ -2,7 +2,8 @@
 .DS_Store
 
 # PHPStorm
-.idea
+.idea/*
+!.idea/workspace.xml
 
 # Composer
 /vendor/
@@ -30,3 +31,6 @@
 # WordPress: Uploads
 /content/uploads/*
 !/content/uploads/index.php
+
+# dotEnv Configuration:
+.env
