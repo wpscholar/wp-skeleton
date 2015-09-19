@@ -32,7 +32,7 @@
   "require": {
     "johnpbloch/wordpress": "@stable",
     "composer/installers": "@stable",
-    "vlucas/phpdotenv": "@stable"
+    "vlucas/phpdotenv": "^2.0"
   },
   "suggest": {
     "wp-cli/wp-cli": "@stable"
