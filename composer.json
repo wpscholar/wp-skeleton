@@ -26,13 +26,13 @@
   "repositories": {
     "wpackagist": {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     }
   },
   "require": {
     "johnpbloch/wordpress": "@stable",
     "composer/installers": "@stable",
-    "vlucas/phpdotenv": "^2.0"
+    "vlucas/phpdotenv": "^2.2"
   },
   "suggest": {
     "wp-cli/wp-cli": "@stable"

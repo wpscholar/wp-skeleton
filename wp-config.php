@@ -18,11 +18,14 @@ if ( ! defined( 'APP_DOMAIN' ) ) {
 	define( 'APP_DOMAIN', $_SERVER['HTTP_HOST'] );
 }
 
-define( 'WP_HOME', 'http://' . APP_DOMAIN );
-define( 'WP_SITEURL', 'http://' . APP_DOMAIN . '/wp' );
+$is_ssl = (boolean) getenv( 'HTTPS' ) || 443 == getenv( 'SERVER_PORT' ) || 'https' === getenv( 'HTTP_X_FORWARDED_PROTO' );
+$scheme = $is_ssl ? 'https' : 'http';
+
+define( 'WP_HOME', $scheme . '://' . APP_DOMAIN );
+define( 'WP_SITEURL', WP_HOME . '/wp' );
 
 define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
-define( 'WP_CONTENT_URL', 'http://' . APP_DOMAIN . '/content' );
+define( 'WP_CONTENT_URL', WP_HOME . '/content' );
 
 if ( ! defined( 'DB_NAME' ) ) {
 	define( 'DB_NAME', getenv( 'DB_NAME' ) );
