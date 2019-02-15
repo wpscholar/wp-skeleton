@@ -6,10 +6,10 @@
 !.idea/workspace.xml
 
 # Composer
-/vendor/
+/vendor
 
 # WordPress
-/wp/
+/wp
 /salt.php
 
 # WordPress: Config File

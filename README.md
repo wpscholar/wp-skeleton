@@ -4,11 +4,11 @@ Setup a new WordPress installation via Composer
 
 ## Requirements
 
-PHP 5.3.2+
+PHP 5.6+
 
 ## Prerequisites
 
-Install Composer by running `curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer` on Linux/Unix/OSX
+Install [Composer](https://getcomposer.org/doc/00-intro.md)
 
 ## Installation
 

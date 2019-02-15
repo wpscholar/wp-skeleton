@@ -1,7 +1,7 @@
 {
   "name": "wpscholar/wp-skeleton",
   "description": "Setup a new WordPress installation via Composer.",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "type": "project",
   "keywords": [
     "WordPress",
@@ -32,7 +32,7 @@
   "require": {
     "johnpbloch/wordpress": "@stable",
     "composer/installers": "@stable",
-    "vlucas/phpdotenv": "^2.2"
+    "wpscholar/phpdotenv": "^1.0"
   },
   "suggest": {
     "wp-cli/wp-cli": "@stable"
