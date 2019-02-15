@@ -43,9 +43,11 @@ $loader
 $table_prefix = WP_TABLE_PREFIX;
 
 // https://api.wordpress.org/secret-key/1.1/salt/
-if ( file_exists( __DIR__ . '/salt.php' ) ) {
-	require __DIR__ . '/salt.php';
+if ( ! file_exists( __DIR__ . '/salt.php' ) ) {
+	throw new RuntimeException( "Please run 'composer run generate-salts'. You are missing a salt.php file" );
 }
+
+require __DIR__ . '/salt.php';
 
 if ( file_exists( __DIR__ . '/wp-config-local.php' ) ) {
 	require __DIR__ . '/wp-config-local.php';
