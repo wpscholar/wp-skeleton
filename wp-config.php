@@ -33,12 +33,18 @@ $loader
 		'WP_TABLE_PREFIX' => 'wp_',
 	] )
 	->parse( __DIR__ . '/.env' )
-	->set( 'WP_HOME', $scheme . '://' . $_SERVER['HTTP_HOST'] )
-	->set( 'WP_SITEURL', $loader->get( 'WP_HOME' ) . '/wp' )
 	->set( 'WP_CONTENT_DIR', __DIR__ . '/content' )
-	->set( 'WP_CONTENT_URL', $loader->get( 'WP_HOME' ) . '/content' )
-	->set( 'DISALLOW_FILE_EDIT', true )
-	->load();
+	->set( 'DISALLOW_FILE_EDIT', true );
+
+// Ensure that we don't cause trouble when running WP-CLI.
+if( isset( $_SERVER['HTTP_HOST'] ) ) {
+	$loader
+		->set( 'WP_HOME', $scheme . '://' . $_SERVER['HTTP_HOST'] )
+		->set( 'WP_SITEURL', $loader->get( 'WP_HOME' ) . '/wp' )
+		->set( 'WP_CONTENT_URL', $loader->get( 'WP_HOME' ) . '/content' )
+}
+
+$loader->load();
 
 $table_prefix = WP_TABLE_PREFIX;
 
