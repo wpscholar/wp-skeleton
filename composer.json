@@ -58,7 +58,8 @@
     ],
     "post-create-project-cmd": [
       "composer run generate-salts",
-      "php -r \"copy('.env.example', '.env');\""
+      "php -r \"copy('.env.example', '.env');\"",
+      "php -r \"unlink('.env.example');\""
     ]
   }
 }
