@@ -32,5 +32,8 @@
 /content/uploads/*
 !/content/uploads/index.php
 
+# WP-CLI
+wp-cli.local.yml
+
 # dotEnv Configuration
 .env
