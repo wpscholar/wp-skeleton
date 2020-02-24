@@ -53,7 +53,8 @@
   },
   "scripts": {
     "generate-salts": [
-      "echo '<?php' > salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> salt.php"
+      "php -r \"file_put_contents('salt.php', '<?php ' . PHP_EOL);\"",
+      "php -r \"file_put_contents('salt.php', file_get_contents('https://api.wordpress.org/secret-key/1.1/salt/'), FILE_APPEND);\""
     ],
     "post-create-project-cmd": [
       "composer run generate-salts"
