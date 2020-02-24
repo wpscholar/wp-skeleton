@@ -41,7 +41,7 @@ if( isset( $_SERVER['HTTP_HOST'] ) ) {
 	$loader
 		->set( 'WP_HOME', $scheme . '://' . $_SERVER['HTTP_HOST'] )
 		->set( 'WP_SITEURL', $loader->get( 'WP_HOME' ) . '/wp' )
-		->set( 'WP_CONTENT_URL', $loader->get( 'WP_HOME' ) . '/content' )
+		->set( 'WP_CONTENT_URL', $loader->get( 'WP_HOME' ) . '/content' );
 }
 
 $loader->load();
